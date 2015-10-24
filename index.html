@@ -69,7 +69,7 @@
         color: #666;
     }
 
-    em { font-style: normal }
+    i { font-style: normal }
 
     .mute { 
         font-weight: 400;
@@ -85,12 +85,12 @@
     }
 
     strong { 
-        font-weight: 400;
-        background: rgba(0,0,0,.1);
-        color: antifa;
-        padding: .2em .5em .15em;
+        font: bold 12px "Helvetica Neue";
+        padding: .75em 1.2em;
         border-radius: 2px;
         transition: all .4s ease-out;
+        text-transform: lowercase;
+        color: rgba(255,255,255,.9);
     }
 
     strong:hover {
@@ -102,9 +102,13 @@
     dd { 
         font-style: italic;
         font-size: smaller; 
+        margin: 0;
     }
     
-    p { line-height: .9 }
+    p { 
+        line-height: 1.6; 
+        margin: .2em;
+    }
 
     footer {
         margin: 3em 0;
@@ -120,6 +124,17 @@
         width: 13.12%;
         border-top: 8px solid #999;
     }
+
+    /* social media colors */
+    .twitter { background: #55acee }
+    .blog { background: #21759b }
+    .github { background: #171515 }
+    .codepen { background: #55acee }
+    .tumblr { background: #35465c }
+    .ello { background: #000 }
+    .medium { background: #1a1919 }
+
+
     </style>
 </head>
 <body>
@@ -133,7 +148,7 @@
         <dl>
             <dt>
                 <a href="https://twitter.com/krakrakrakrakra">
-                    <strong>Twitter</strong>
+                    <strong class="twitter">Twitter</strong>
                     <span class="mute">@krakrakrakrakra</span>
                 </a>
             </dt>
@@ -143,17 +158,17 @@
                 </dd>
             <dt>
                 <a href="http://zimt.forgefire.us">
-                    <strong>Blog</strong>
+                    <strong class="blog">Blog</strong>
                     <span class="mute">zimt.forgefire.us</span>
                 </a>
             </dt>
                 <dd>
-                    <p lang="de">Alle <em>dystopial</em>lyrischen Texte, die ich bisher verfasst&nbsp;habe.</p>
-                    <p>All my <em>dystopialy</em>-lyrical works gathered in one&nbsp;place.</p>
+                    <p lang="de">Alle <i>dystopial</i>lyrischen Texte, die ich bisher verfasst&nbsp;habe.</p>
+                    <p>All my <i>dystopialy</i>-lyrical works gathered in one&nbsp;place.</p>
                 </dd>
             <dt>
                 <a href="https://github.com/zimtimgetriebe">
-                    <strong>Github</strong>
+                    <strong class="github">Github</strong>
                     <span class="mute">github.com/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -163,7 +178,7 @@
                 </dd>
             <dt>
                 <a href="https://gist.github.com/zimtimgetriebe">
-                    <strong>Gist</strong>
+                    <strong class="github">Gist</strong>
                     <span class="mute">gist.github.com/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -173,7 +188,7 @@
                 </dd>
             <dt>
                 <a href="https://codepen.io/zimtimgetriebe">
-                    <strong>Codepen</strong>
+                    <strong class="codepen">Codepen</strong>
                     <span class="mute">codepen.io/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -183,17 +198,17 @@
                 </dd>
             <dt>
                 <a href="http://zimtimgetriebe.tumblr.com">
-                    <strong>Tumblr</strong>
+                    <strong class="tumblr">Tumblr</strong>
                     <span class="mute">zimtimgetriebe.tumblr.com</span>
                 </a>
             </dt>
                 <dd>
-                    <p lang="de"><em>&bdquo;Ist das Kunst oder kann das verbloggt&nbsp;werden?&ldquo;</em></p>
+                    <p lang="de"><i>&bdquo;Ist das Kunst oder kann das verbloggt&nbsp;werden?&ldquo;</i></p>
                     <p>Artsy&ndash;fartsy&nbsp;Tumblelog.</p>
                 </dd>
             <dt>
                 <a href="https://ello.co/kra">
-                    <strong>Ello</strong>
+                    <strong class="ello">Ello</strong>
                     <span class="mute">ello.co/kra</span>
                 </a>
             </dt>
@@ -203,7 +218,7 @@
                 </dd>
             <dt>
                 <a href="https://medium.com/@kra">
-                    <strong>Medium</strong>
+                    <strong class="medium">Medium</strong>
                     <span class="mute">medium.com/@kra</span>
                 </a>
             </dt>
