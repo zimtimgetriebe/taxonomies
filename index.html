@@ -17,7 +17,8 @@
         box-sizing: border-box;
         font: 300 18px/1.312 "Avenir Next Pro", "Avenir Next", Avenir, "Neue Haas Unica", "Helvetica Neue", -apple-system, Helvetica, sans-serif;
         background: #f6f6f6;
-        color: #666;
+        color: #333;
+        text-rendering: geometricPrecision;
     }
 
     .wrapper {
@@ -69,7 +70,7 @@
         color: #666;
     }
 
-    em { font-style: normal }
+    i { font-style: normal }
 
     .mute { 
         font-weight: 400;
@@ -86,11 +87,11 @@
 
     strong { 
         font-weight: 400;
-        background: rgba(0,0,0,.1);
-        color: antifa;
+        background: rgba(0,0,0,.5);
         padding: .2em .5em .15em;
-        border-radius: 2px;
         transition: all .4s ease-out;
+        text-transform: lowercase;
+        color: rgba(255,255,255,.9);
     }
 
     strong:hover {
@@ -101,10 +102,14 @@
 
     dd { 
         font-style: italic;
-        font-size: smaller; 
+        font-size: 1em; 
+        margin: 0 0 2em 0;
     }
     
-    p { line-height: .9 }
+    p { 
+        line-height: 1.6; 
+        margin: .2em;
+    }
 
     footer {
         margin: 3em 0;
@@ -148,8 +153,8 @@
                 </a>
             </dt>
                 <dd>
-                    <p lang="de">Alle <em>dystopial</em>lyrischen Texte, die ich bisher verfasst&nbsp;habe.</p>
-                    <p>All my <em>dystopialy</em>-lyrical works gathered in one&nbsp;place.</p>
+                    <p lang="de">Alle <i>dystopial</i>lyrischen Texte, die ich bisher verfasst&nbsp;habe.</p>
+                    <p>All my <i>dystopialy</i>-lyrical works gathered in one&nbsp;place.</p>
                 </dd>
             <dt>
                 <a href="https://github.com/zimtimgetriebe">
@@ -188,7 +193,7 @@
                 </a>
             </dt>
                 <dd>
-                    <p lang="de"><em>&bdquo;Ist das Kunst oder kann das verbloggt&nbsp;werden?&ldquo;</em></p>
+                    <p lang="de"><i>&bdquo;Ist das Kunst oder kann das verbloggt&nbsp;werden?&ldquo;</i></p>
                     <p>Artsy&ndash;fartsy&nbsp;Tumblelog.</p>
                 </dd>
             <dt>
