@@ -17,7 +17,8 @@
         box-sizing: border-box;
         font: 300 18px/1.312 "Avenir Next Pro", "Avenir Next", Avenir, "Neue Haas Unica", "Helvetica Neue", -apple-system, Helvetica, sans-serif;
         background: #f6f6f6;
-        color: #666;
+        color: #333;
+        text-rendering: geometricPrecision;
     }
 
     .wrapper {
@@ -85,9 +86,9 @@
     }
 
     strong { 
-        font: bold 12px "Helvetica Neue";
-        padding: .75em 1.2em;
-        border-radius: 2px;
+        font-weight: 400;
+        background: rgba(0,0,0,.5);
+        padding: .2em .5em .15em;
         transition: all .4s ease-out;
         text-transform: lowercase;
         color: rgba(255,255,255,.9);
@@ -101,8 +102,8 @@
 
     dd { 
         font-style: italic;
-        font-size: smaller; 
-        margin: 0;
+        font-size: 1em; 
+        margin: 0 0 2em 0;
     }
     
     p { 
@@ -124,17 +125,6 @@
         width: 13.12%;
         border-top: 8px solid #999;
     }
-
-    /* social media colors */
-    .twitter { background: #55acee }
-    .blog { background: #21759b }
-    .github { background: #171515 }
-    .codepen { background: #55acee }
-    .tumblr { background: #35465c }
-    .ello { background: #000 }
-    .medium { background: #1a1919 }
-
-
     </style>
 </head>
 <body>
@@ -148,7 +138,7 @@
         <dl>
             <dt>
                 <a href="https://twitter.com/krakrakrakrakra">
-                    <strong class="twitter">Twitter</strong>
+                    <strong>Twitter</strong>
                     <span class="mute">@krakrakrakrakra</span>
                 </a>
             </dt>
@@ -158,7 +148,7 @@
                 </dd>
             <dt>
                 <a href="http://zimt.forgefire.us">
-                    <strong class="blog">Blog</strong>
+                    <strong>Blog</strong>
                     <span class="mute">zimt.forgefire.us</span>
                 </a>
             </dt>
@@ -168,7 +158,7 @@
                 </dd>
             <dt>
                 <a href="https://github.com/zimtimgetriebe">
-                    <strong class="github">Github</strong>
+                    <strong>Github</strong>
                     <span class="mute">github.com/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -178,7 +168,7 @@
                 </dd>
             <dt>
                 <a href="https://gist.github.com/zimtimgetriebe">
-                    <strong class="github">Gist</strong>
+                    <strong>Gist</strong>
                     <span class="mute">gist.github.com/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -188,7 +178,7 @@
                 </dd>
             <dt>
                 <a href="https://codepen.io/zimtimgetriebe">
-                    <strong class="codepen">Codepen</strong>
+                    <strong>Codepen</strong>
                     <span class="mute">codepen.io/zimtimgetriebe</span>
                 </a>
             </dt>
@@ -198,7 +188,7 @@
                 </dd>
             <dt>
                 <a href="http://zimtimgetriebe.tumblr.com">
-                    <strong class="tumblr">Tumblr</strong>
+                    <strong>Tumblr</strong>
                     <span class="mute">zimtimgetriebe.tumblr.com</span>
                 </a>
             </dt>
@@ -208,7 +198,7 @@
                 </dd>
             <dt>
                 <a href="https://ello.co/kra">
-                    <strong class="ello">Ello</strong>
+                    <strong>Ello</strong>
                     <span class="mute">ello.co/kra</span>
                 </a>
             </dt>
@@ -218,7 +208,7 @@
                 </dd>
             <dt>
                 <a href="https://medium.com/@kra">
-                    <strong class="medium">Medium</strong>
+                    <strong>Medium</strong>
                     <span class="mute">medium.com/@kra</span>
                 </a>
             </dt>
