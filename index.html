@@ -1,227 +1,90 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="about:kra &mdash; taxonomies">
 
-    <meta charset="UTF-8">
-    <title>Taxonomies &mdash; Zimt im Getriebe</title>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>about:kra</title>
 
     <style>
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
-        box-sizing: border-box;
-        font: 300 18px/1.312 "Avenir Next Pro", "Avenir Next", Avenir, "Neue Haas Unica", "Helvetica Neue", -apple-system, Helvetica, sans-serif;
-        background: #f6f6f6;
+        font: 400 16px/1.6 Inconsolata, Hack, "Fira Mono", Monaco, monospace; 
         color: #333;
-        text-rendering: geometricPrecision;
     }
-
-    .wrapper {
-        box-sizing: border-box;
-        margin: 1em auto;
-        padding: 1em;
-        width: 690px;
+    main {
+        width: 360px;
+        margin: 0 auto;
+        padding: 1.6rem;
     }
-
-    @media (max-width: 690px) {
-        .wrapper {
-            width: 100%;
-            margin: 1.6%;
-            padding: 10px;
-        }
-    }
-
-    .tagline {
-        color: #aaa;
-        letter-spacing: 6px;
+    h1 {
         text-transform: uppercase;
-        font-size: 10px;
-        font-weight: 100;
+        font-size: 1.2rem;
+        margin: 1.6rem 0;
     }
-
-    h1 { 
-        font: italic 700 2em/1 "Avenir Next Pro", "Avenir Next", Avenir, "Neue Haas Unica", "Helvetica Neue", -apple-system, Helvetica, sans-serif;
+    ul {
+        list-style: none;
     }
-
-    h1:after {
-        display: block;
-        margin: 1em 0;
-        content: "";
-        width: 13.12%;
-        border-top: 8px solid #999;
-    }
-    
-    .accent-color  { color: #D61250 }
-
-    dl { 
-        margin: 3em 0;
-        line-height: 2;
-    }
-
-    dt { margin-top: 1em }
-
     a {
+        color: #e4223f;
         text-decoration: none;
-        color: #666;
+        border-radius: 2px;
+        padding: 2px;
+        border: 2px solid transparent;
+        transition: color .1312s ease-in, border-color .1312s ease-in;
     }
-
-    i { font-style: normal }
-
-    .mute { 
-        font-weight: 400;
-        font-size: 10px;
-        color: #ccc;
-        padding: 1em;
-        transition: color .4s ease-out;
+    a:hover {
+        color: #ea4f66;
+        border-bottom: 2px solid #ea4f66;
     }
-
-    .mute:hover { 
-        color: #666;
-        transition: color .2s ease-in;
-    }
-
-    strong { 
-        font-weight: 400;
-        background: rgba(0,0,0,.5);
-        padding: .2em .5em .15em;
-        transition: all .4s ease-out;
-        text-transform: lowercase;
-        color: rgba(255,255,255,.9);
-    }
-
-    strong:hover {
-        background: #D61250;
-        color: #fff;
-        transition: all .1s ease-in;
-    }
-
-    dd { 
-        font-style: italic;
-        font-size: 1em; 
-        margin: 0 0 2em 0;
-    }
-    
-    p { 
-        line-height: 1.6; 
-        margin: .2em;
-    }
-
-    footer {
-        margin: 3em 0;
-        font-size: .75em;
-        color: rgba(0,0,0,.3);
-        text-align: right;
-    }
-
-    footer:before {
-        display: block;
-        margin: 3em 0;
-        content: "";
-        width: 13.12%;
-        border-top: 8px solid #999;
+    a:active, a:focus {
+        color: #ea4f66;
+        border: 2px solid #e4223f;
     }
     </style>
+
+    <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500">
+    <link type="text/plain" rel="author" href="http://zimtimgetriebe.github.io/taxonomies/humans.txt">
+
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Kra",
+      "url" : "https://git.io/about:kra",
+      "sameAs" : [
+        "https://twitter.com/krakrakrakrakra",
+        "https://medium.com/@kra",
+        "https://medium.com/zimt-im-getriebe",
+        "https://github.com/zimtimgetriebe",
+        "https://gnusocial.de/kra", 
+        "https://keybase.io/krakrakra/"
+      ]
+    }
+    </script>
+
 </head>
 <body>
 
-    <div class="wrapper">
+    <main>
 
-        <p class="tagline">Find me</p>
+        <h1>about:kra</h1>
 
-        <h1>Taxonomies<span class="accent-color">.</span></h1>
-        
-        <dl>
-            <dt>
-                <a href="https://twitter.com/krakrakrakrakra">
-                    <strong>Twitter</strong>
-                    <span class="mute">@krakrakrakrakra</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Politisches Getwitter, ab &amp; an über Webdevelopment; manchmal&nbsp;Mikrolyrik.</p>
-                    <p>Political tweets mostly, sometimes about webdevelopment, occasionally micro&nbsp;poetry.</p>
-                </dd>
-            <dt>
-                <a href="http://zimt.forgefire.us">
-                    <strong>Blog</strong>
-                    <span class="mute">zimt.forgefire.us</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Alle <i>dystopial</i>lyrischen Texte, die ich bisher verfasst&nbsp;habe.</p>
-                    <p>All my <i>dystopialy</i>-lyrical works gathered in one&nbsp;place.</p>
-                </dd>
-            <dt>
-                <a href="https://github.com/zimtimgetriebe">
-                    <strong>Github</strong>
-                    <span class="mute">github.com/zimtimgetriebe</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Wenn ich an Web-relatierten Projekten arbeite, landen diese&nbsp;hier.</p>
-                    <p>Web-related stuff and code projects I work on are&nbsp;here.</p>
-                </dd>
-            <dt>
-                <a href="https://gist.github.com/zimtimgetriebe">
-                    <strong>Gist</strong>
-                    <span class="mute">gist.github.com/zimtimgetriebe</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Meine Code&ndash;, Markup&ndash; Typografie&ndash;,&nbsp;Textschnipsel.</p>
-                    <p>A collection of my code&#8202;/&#8202;markup&#8202;/&#8202;typography&#8202;/&#8202;text&nbsp;snippets.</p>
-                </dd>
-            <dt>
-                <a href="https://codepen.io/zimtimgetriebe">
-                    <strong>Codepen</strong>
-                    <span class="mute">codepen.io/zimtimgetriebe</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Front End&ndash;Experimente: Markup und&nbsp;Live-Beispiele.</p>
-                    <p>My front end experiments with their respective live working&nbsp;examples.</p>
-                </dd>
-            <dt>
-                <a href="http://zimtimgetriebe.tumblr.com">
-                    <strong>Tumblr</strong>
-                    <span class="mute">zimtimgetriebe.tumblr.com</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de"><i>&bdquo;Ist das Kunst oder kann das verbloggt&nbsp;werden?&ldquo;</i></p>
-                    <p>Artsy&ndash;fartsy&nbsp;Tumblelog.</p>
-                </dd>
-            <dt>
-                <a href="https://ello.co/kra">
-                    <strong>Ello</strong>
-                    <span class="mute">ello.co/kra</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Glitch&ndash;Art.</p>
-                    <p>Glitch art.</p>
-                </dd>
-            <dt>
-                <a href="https://medium.com/@kra">
-                    <strong>Medium</strong>
-                    <span class="mute">medium.com/@kra</span>
-                </a>
-            </dt>
-                <dd>
-                    <p lang="de">Texte.</p>
-                    <p>Texts.</p>
-                </dd>
-        </dl> 
+        <ul>
+            <li title="politics, webdev, microlyric, hate">twitter: <a href="https://twitter.com/krakrakrakrakra">@krakrakrakrakra</a>
+            <li title="dystopiallyrik on medium.com">blog: <a href="https://medium.com/zimt-im-getriebe">Zimt im Getriebe</a>
+            <li title="you can chat with me via jabber/xmpp">jabber: <a href="https://systemli.org">kra@jabber.systemli.org</a>
+            <li title="codestuff, front-end thingies, experiments">github: <a href="https://github.com/zimtimgetriebe">zimtimgetriebe</a>
+            <li title="backup for twitter/microblogging">gnusocial: <a href="https://gnusocial.de/kra">gnusocial.de/kra</a>
+            <li title="keys.">keybase.io: <a href="https://keybase.io/krakrakra/">krakrakra</a>
+        </ul>
 
-        <footer>
-            code&#10084;<code>poetry</code>
-        </footer>
-    </div>
+    </main>
 
 </body>
 </html>
